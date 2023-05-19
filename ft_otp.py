@@ -6,7 +6,7 @@ print('''
 --------------------------------------------------------------------------------------------------------------
 ''')
 
-# ____________________________________________ DESCRIPCION ____________________________________________________ #
+# __________________________________________ DESCRIPCION ____________________________________________________ #
 
 '''ft_opt permite registrar una clave inicial, y es capaz de generar una nueva contraseña cada vez que se solicite. 
 -- Con la opción -g , el programa recibirá como argumento una clave hexadecimal de al menos 64 caracteres. 
@@ -14,14 +14,14 @@ print('''
 -- Con la opción -k, el programa generará una nueva contraseña temporal y la mos- trará en la salida estándar. ...]'''
 
 
-# ____________________________________________ LIBRERIAS ____________________________________________________ #
+# ____________________________________________ LIBRERIAS ___________________________________________________ #
 
 import hmac, base64, struct, hashlib, time
 import argparse
 import sys, os, re
 from cryptography.fernet import Fernet
 
-# ________________________________________  MENÚ DE ARGUMENTOS  _______________________________________________ #
+# _______________________________________  MENÚ DE ARGUMENTOS  _____________________________________________ #
 # ft_get_argument() tomará los argumentos de entrada del programa ft_otp
 
 def process_arguments():
@@ -30,7 +30,7 @@ def process_arguments():
 	parser.add_argument('-k', '--opt_k', type=str, default=None)
 	args = parser.parse_args()
 	return args
-# ______________________________________________  HOPT y TOTP  _________________________________________________ #
+# __________________________________________  HOPT y TOTP  _________________________________________________ #
 # HOPT (HMAC-based One-Time Password), contraseña de un solo uso basada en eventos: basada en el algoritmo criptográfico HMAC 
 # y depende de dos tipos de información. El primero es la clave secreta llamada “inicialización” la cual solo conoce el token y el 
 # servidor que valida los códigos OTP enviados. el segundo es el factor móvil, que es un contador almacenado en el token y el servidor. 
