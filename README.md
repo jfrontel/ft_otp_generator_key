@@ -33,6 +33,9 @@ archivo llamado ft_otp.key, que estará cifrado en todo momento.</p>
 <p>-- Con la opción -k, el programa generará una nueva contraseña temporal y la mos-
 trará en la salida estándar.</p>
 
+![diagrama](https://github.com/jfrontel/ft_otp_generator_key/assets/114813145/5e1f53ea-b7a4-4e74-a2bb-c4ae0ecf5638)
+
+
 <h2> Analisis ft_opt</h2>
 
 <h3>Códigos OTP</h3>
