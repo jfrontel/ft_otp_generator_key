@@ -33,8 +33,6 @@ archivo llamado ft_otp.key, que estará cifrado en todo momento.</p>
 <p>-- Con la opción -k, el programa generará una nueva contraseña temporal y la mos-
 trará en la salida estándar.</p>
 
-![diagrama](https://github.com/jfrontel/ft_otp_generator_key/assets/114813145/5e1f53ea-b7a4-4e74-a2bb-c4ae0ecf5638)
-
 
 <h2> Analisis ft_opt</h2>
 
@@ -94,6 +92,8 @@ vulnerabilidad muy grande.</p>
 sea fácilmente después retornado por el usuario, ya que un código de muchos dígitos dificultaría el acto de autenticación y empeoraría la
 experiencia final del usuario. Es importante que los valores generados por el algoritmo HOTP sean tratados como big-endian, es decir,
 representar los bytes en el orden natural (desde la izquierda) y evitar así problemas de interpretación</p>
+
+![diagrama](https://github.com/jfrontel/ft_otp_generator_key/assets/114813145/5e1f53ea-b7a4-4e74-a2bb-c4ae0ecf5638)
 
           https://openaccess.uoc.edu/bitstream/10609/99946/6/javgueramTFM0619memoria.pdf
  
